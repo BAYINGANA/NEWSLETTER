@@ -1,6 +1,6 @@
-# Newsletter Landing Page
+<img width="984" height="610" alt="image" src="https://github.com/user-attachments/assets/4b0b228b-f77c-4019-b61f-c09832511b60" /># Newsletter Landing Page
 
-A clean, responsive landing page to collect email subscriptions for a newsletter. Built with HTML, CSS, and vanilla JavaScript.  
+A clean, responsive landing page to collect email subscriptions for a newsletter. Built with HTML, CSS, and JavaScript.  
 
 The page features:  
 
@@ -20,7 +20,7 @@ The page features:
 
 ## 🚀 Live Demo
 
-View the live page here: [Your Live Link]([https://your-username.github.io/your-repo/](https:///NEWSLETTER/))
+View the live page here: https://bayingana.github.io/NEWSLETTER/
 
 ---
 
