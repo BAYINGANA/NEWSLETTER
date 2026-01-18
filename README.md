@@ -1,4 +1,4 @@
-<img width="984" height="610" alt="image" src="https://github.com/user-attachments/assets/4b0b228b-f77c-4019-b61f-c09832511b60" /># Newsletter Landing Page
+# Newsletter Landing Page
 
 A clean, responsive landing page to collect email subscriptions for a newsletter. Built with HTML, CSS, and JavaScript.  
 
