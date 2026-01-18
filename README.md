@@ -13,7 +13,8 @@ The page features:
 
 ## 📸 Screenshot
 
-![Screenshot](newsletter.png)
+<img width="984" height="610" alt="image" src="https://github.com/user-attachments/assets/ec66e38c-998a-4080-82a2-18ffb37b8a9d" />
+
 
 ---
 
