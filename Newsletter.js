@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const email = emailInput.value.trim();
-  const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+ const isValid = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/.test(email);
 
   if (!isValid) {
     emailInput.classList.add("error");
