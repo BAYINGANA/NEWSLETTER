@@ -11,20 +11,19 @@ The page features:
 
 ---
 
-## 📸 Screenshot
+##  Screenshot
 
-<img width="984" height="610" alt="image" src="https://github.com/user-attachments/assets/ec66e38c-998a-4080-82a2-18ffb37b8a9d" />
-
-
+<img width="978" height="638" alt="image" src="https://github.com/user-attachments/assets/0f7761e4-c1e9-4945-9a18-97d6536e6d78" />
+<img width="981" height="581" alt="image" src="https://github.com/user-attachments/assets/0e6055a4-b571-41b3-b54c-b4ab4c857687" />
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 View the live page here: https://bayingana.github.io/NEWSLETTER/
 
 ---
 
-## 🛠️ Features
+##  Features
 
 - **Responsive design**: Grid layout adapts to all screen sizes.  
 - **Form validation**: Displays an error if the email is invalid.  
@@ -33,7 +32,7 @@ View the live page here: https://bayingana.github.io/NEWSLETTER/
 
 ---
 
-## 💻 Installation / Local Setup
+##  Installation / Local Setup
 
 1. Clone the repository:
 
