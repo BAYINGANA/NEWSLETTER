@@ -40,7 +40,7 @@ Users should be able to:
 
 **Desktop — Success**
 
-<img width="669" height="569" alt="image" src="https://github.com/user-attachments/assets/e63bc0da-318b-4567-9132-e6d8f1150431" />
+<img width="569" height="507" alt="image" src="https://github.com/user-attachments/assets/93f39642-c34c-481c-afe7-2d791928c261" />
 
 **Mobile — Default**
 
