@@ -1,41 +1,112 @@
-# Newsletter Landing Page
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-A clean, responsive landing page to collect email subscriptions for a newsletter. Built with HTML, CSS, and JavaScript.  
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv).
 
-The page features:  
+## Table of contents
 
-- A responsive layout that works on desktop and mobile devices.  
-- Email input validation with error feedback.  
-- A success card displayed after successful subscription.  
-- Styled with modern UI elements, gradients, and hover effects.  
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Add their email and submit the form
+- See a success message with their email after successfully submitting the form
+- See form validation messages if:
+  - The field is left empty
+  - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+**Desktop — Default**
+
+![alt text](image.png)
+
+**Desktop — Error state**
+
+![alt text](image-1.png)
+
+**Desktop — Success**
+
+![alt text](image-2.png)
+
+**Mobile — Default**
+
+![alt text](image-3.png)
+
+**Mobile — Success**
+
+![alt text](image-4.png)
+
+### Links
+
+- Solution URL: [Frontend Mentor solution](https://your-solution-url.com)
+- Live Site URL: [https://bayingana.github.io/NEWSLETTER/](https://bayingana.github.io/NEWSLETTER/)
+
+
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first responsive design
+- Vanilla JavaScript (form validation, success state)
+
+### What I learned
+
+**Responsive layout with CSS Grid and Flexbox**  
+The desktop layout uses a two-column CSS Grid, while mobile switches to a full-screen flex column. Managing the cascade between the `900px` and `768px` breakpoints taught me to always explicitly override properties in the narrower breakpoint rather than relying on inheritance.
+
+**Form validation without a library**  
+A simple regex handles email validation client-side. The error state is toggled by adding/removing a class on the input, which drives both the red border and background tint through CSS alone.
+
+```js
+function isValidEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+}
+```
+
+**Mobile image swap via JavaScript**  
+The `content: url()` CSS trick for swapping SVG sources is unreliable across browsers. Swapping `src` directly in JS on load and resize proved far more consistent.
+
+```js
+function updateHeroImage() {
+  heroImg.src = window.innerWidth <= 768
+    ? 'assets/images/illustration-sign-up-mobile.svg'
+    : 'assets/images/illustration-sign-up-desktop.svg';
+}
+updateHeroImage();
+window.addEventListener('resize', updateHeroImage);
+```
+
+**Button active/hover states**  
+Both the subscribe and dismiss buttons use a coral gradient on hover and active, with a matching box-shadow glow — applied identically so the interaction feels consistent.
+
+```css
+button:hover,
+button:active {
+  background: linear-gradient(135deg, var(--tomato), var(--tomato-hover));
+  box-shadow: 0 8px 24px hsla(4, 100%, 67%, 0.45);
+}
+```
 
 ---
 
-## 📸 Screenshot
-
-<img width="984" height="610" alt="image" src="https://github.com/user-attachments/assets/ec66e38c-998a-4080-82a2-18ffb37b8a9d" />
-
-
----
-
-## 🚀 Live Demo
-
-View the live page here: https://bayingana.github.io/NEWSLETTER/
-
----
-
-## 🛠️ Features
-
-- **Responsive design**: Grid layout adapts to all screen sizes.  
-- **Form validation**: Displays an error if the email is invalid.  
-- **Success message**: Shows a confirmation card after subscribing.  
-- **Accessible UI**: Clear labels, hover states, and proper feedback.  
-
----
-
-## 💻 Installation / Local Setup
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repo.git
+## Author
+- Live Site — [https://bayingana.github.io/NEWSLETTER/](https://bayingana.github.io/NEWSLETTER/)
