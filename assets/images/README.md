@@ -106,7 +106,6 @@ button:active {
 }
 ```
 
----
 
 ## Author
 - Live Site — [https://bayingana.github.io/NEWSLETTER/](https://bayingana.github.io/NEWSLETTER/)
