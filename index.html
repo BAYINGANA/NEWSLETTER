@@ -9,53 +9,110 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="Newsletter.js" defer></script>
 </head>
+
 <body>
+
+    <!-- ───────────── Newsletter Card ───────────── -->
     <main class="grid-container" id="newsletter">
-        <section class="text-section">
-            <h1>Stay updated!</h1>
-            <p>Join 60,000+ product managers receiving monthly updates on:</p>
-            <ul>
-                <li>Product discovery and building what matters</li>
-                <li>Measuring to ensure updates are a success</li>
-                <li>And much more!</li>
+
+        <!-- Text Section -->
+        <section class="text-section" id="section-text">
+
+            <h1 id="text-heading">
+                Stay updated!
+            </h1>
+
+            <p id="text-description">
+                Join 60,000+ product managers receiving monthly updates on:
+            </p>
+
+            <ul id="list-features">
+                <li id="feature-discovery">
+                    Product discovery and building what matters
+                </li>
+                <li id="feature-measurement">
+                    Measuring to ensure updates are a success
+                </li>
+                <li id="feature-more">
+                    And much more!
+                </li>
             </ul>
 
-            <form id="form" novalidate>
-                <div class="label-row">
-                    <label for="email">Email address</label>
-                    <span class="error-text" id="error">Valid email required</span>
+            <form id="form-newsletter" novalidate>
+
+                <div class="label-row" id="row-email">
+                    <label for="email" id="label-email">
+                        Email address
+                    </label>
+
+                    <span class="error-text" id="error">
+                        Valid email required
+                    </span>
                 </div>
+
                 <input
                     type="email"
                     id="email"
+                    name="email"
                     placeholder="email@company.com"
                     required
                     autocomplete="email"
                 />
-                <button type="submit">Subscribe to monthly newsletter</button>
+
+                <button
+                    type="submit"
+                    id="btn-subscribe">
+                    Subscribe to monthly newsletter
+                </button>
+
             </form>
         </section>
 
-        <section class="img-section">
+        <!-- Image Section -->
+        <section class="img-section" id="section-image">
             <img
                 id="hero-img"
                 src="assets/images/illustration-sign-up-desktop.svg"
                 alt="Newsletter dashboard illustration"
             />
         </section>
+
     </main>
 
-    <div class="success-card" id="success" role="alert" aria-live="polite">
-        <div class="check" aria-hidden="true">
-            <img src="assets/images/icon-success.svg" alt="" />
+    <!-- ───────────── Success Card ───────────── -->
+    <div
+        class="success-card"
+        id="card-success"
+        role="alert"
+        aria-live="polite"
+        style="display: none;"
+    >
+
+        <div class="check" id="icon-success" aria-hidden="true">
+            <img
+                src="assets/images/icon-success.svg"
+                alt=""
+                id="img-success-icon"
+            />
         </div>
-        <h1>Thanks for subscribing!</h1>
-        <p>
+
+        <h1 id="text-success-heading">
+            Thanks for subscribing!
+        </h1>
+
+        <p id="text-success-message">
             A confirmation email has been sent to
             <strong id="success-email"></strong>.
             Please open it and click the button inside to confirm your subscription.
         </p>
-        <button id="dismiss" type="button">Dismiss message</button>
+
+        <button
+            id="btn-dismiss"
+            type="button">
+            Dismiss message
+        </button>
+
     </div>
+
 </body>
 </html>
