@@ -12,21 +12,18 @@
 
 <body>
 
-    <!-- ───────────── Newsletter Card ───────────── -->
+    <!-- Newsletter Card -->
     <main class="grid-container" id="newsletter">
 
-        <!-- Text Section -->
-        <section class="text-section" id="section-text">
+        <section class="text-section">
 
-            <h1 id="text-heading">
-                Stay updated!
-            </h1>
+            <h1 id="text-heading">Stay updated!</h1>
 
             <p id="text-description">
                 Join 60,000+ product managers receiving monthly updates on:
             </p>
 
-            <ul id="list-features">
+            <ul>
                 <li id="feature-discovery">
                     Product discovery and building what matters
                 </li>
@@ -38,9 +35,9 @@
                 </li>
             </ul>
 
-            <form id="form-newsletter" novalidate>
+            <form id="form" novalidate>
 
-                <div class="label-row" id="row-email">
+                <div class="label-row">
                     <label for="email" id="label-email">
                         Email address
                     </label>
@@ -49,7 +46,6 @@
                         Valid email required
                     </span>
                 </div>
-
                 <input
                     type="email"
                     id="email"
@@ -68,8 +64,7 @@
             </form>
         </section>
 
-        <!-- Image Section -->
-        <section class="img-section" id="section-image">
+        <section class="img-section">
             <img
                 id="hero-img"
                 src="assets/images/illustration-sign-up-desktop.svg"
@@ -78,21 +73,18 @@
         </section>
 
     </main>
-
-    <!-- ───────────── Success Card ───────────── -->
     <div
         class="success-card"
-        id="card-success"
+        id="success"
         role="alert"
         aria-live="polite"
-        style="display: none;"
     >
 
-        <div class="check" id="icon-success" aria-hidden="true">
+        <div class="check">
             <img
+                id="img-success-icon"
                 src="assets/images/icon-success.svg"
                 alt=""
-                id="img-success-icon"
             />
         </div>
 
@@ -105,9 +97,8 @@
             <strong id="success-email"></strong>.
             Please open it and click the button inside to confirm your subscription.
         </p>
-
         <button
-            id="btn-dismiss"
+            id="dismiss"
             type="button">
             Dismiss message
         </button>
